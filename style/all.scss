@@ -1,0 +1,308 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//font
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+  }
+
+body{
+    font-family: 
+    "PingFang TC",
+      -apple-system,
+    BlinkMacSystemFont,
+    "Microsoft JhengHei",
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue", Arial, sans-serif,
+  }
+  .text-green{
+    color: #3F5D45
+  }
+  .pos-rel{
+    position: relative
+  }
+  .bg-cover{
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .box{
+    height: 300px;
+    width: 300px;
+    background: #333;
+  }
+  .btn-primary{
+    background-color: #EAF0ED;
+    border-color: #EAF0ED;
+    color: #3F5D45;
+  }
+  /* end Common */
+  .header-logo{
+    background-image:url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/logotype.svg);
+    background-repeat: no-repeat;
+    width:115px;
+    height:18px;
+  }
+  
+  @media (min-width: 992px) { 
+    .header-logo{
+      background-image:url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/logo-all-dark.svg);
+      background-repeat: no-repeat;
+      width:210px;
+      height:40px;
+    }
+  }
+  .navbar-brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (min-width: 992px) { 
+    .navbar-brand{
+      left: 0px;
+      transform: translateX(0)
+    }
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color:rgba( 63, 93, 69, 1)
+  }
+  .header-cart{
+    position: absolute;
+    right: 0px;
+    top: 1px;
+  }
+  .navbar-light .navbar-toggler{
+    border: none;
+  }
+  /* end navBar */
+  .header-banner{
+    background-image:url(https://goo.gl/X16253);
+    height: 496px;
+  }
+  .header-highlight{
+    transform: translateY(-85px);
+  }
+  
+  .header-highlight-item{
+    background-color: #3F5D45;
+    color: white;
+    height: 256px;
+    
+    .straight{
+      margin: 0 auto;
+      writing-mode: vertical-rl;
+      font-size: 24px;
+      letter-spacing: 18px;
+      text-align: center;  
+      transform: translateY(28%)
+    }
+  }
+  // end header 3box
+  .why-do{
+    background-color: #EAF0ED;
+    height:420px;
+    
+    .why-do-img{
+      background-image: url(https://goo.gl/bgN3Yx);
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      top: 0px;
+      margin: 0;
+    }  
+    .title{
+      background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/title_01_sm.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -50px;
+      // left: 33%;
+      width: 196px;
+      height: 60px;
+    }
+    .desc{
+      color: #8DA291;
+      font-size: 16px;
+      line-height: 33px;
+      margin-left: 0;
+      padding: 280px 0 0 0;
+    }
+    @media (min-width: 768px) {
+      .why-do{
+        height: 420px;
+      }  
+      .why-do-img{
+        width: 460px;
+        height: 460px;
+        top: -20px;
+      }  
+      .title{
+        background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/title_01_lg.svg);
+        top: -20px;
+        right: 0;
+        width: 88px;
+        height: 308px;
+      }
+      .desc{
+        writing-mode: vertical-rl;
+        font-size: 16px;
+        line-height: 40px;
+        padding: 70px 0;
+      }
+    }
+  }
+  // end why do
+  
+  
+  //end why eat
+  .no-reason{
+    background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/title_03_sm.svg);
+    width: 226px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }  
+  @media (min-width: 768px) { 
+    .no-reason{
+      background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/title_03_lg.svg);
+      width: 80px;
+      height: 320px;
+    }  
+  }
+  // end no-reason 
+//   .product{
+//     .card-img-top{
+//       height: 315px;
+//     }
+//     .card{
+//       border-color: #EAF0ED;
+//     }
+//     .card-body{
+//       padding: 0;
+//     }
+//     .card-footer{
+//       background-color: #EAF0ED;
+//       padding:0;
+//     }
+//   }
+
+    .item-card .item-image{
+        height: 315px;
+        background-size: cover;
+        background-position: 50% 50%;
+        position: relative;
+    }
+    .item-card .item-tag{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding: 15px 10px;
+        color: white;
+        background-color: #3F5D45;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        letter-spacing: 7px;
+    }
+    .item-card .item-stared-icon{
+        position: absolute;
+        top: 20px;
+        right: 22px;
+    }
+    .material-icons{
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+    }
+    .ui-checked-display .ui-show, .ui-checked-display .ui-checkbox{
+        display: none;
+    }
+    .item-body{
+        border: 1px solid #EAF0ED;
+    }
+    .item-card .item-name{
+        border-right: 1px solid #EAF0ED;
+    }
+    .item-card .item-name, .item-card .item-price{
+        color: #3F5D45;
+        padding: 15px 0;
+        font-size: 1.25rem;
+    }
+    .btn-primary-lighter{
+        color: #212529;
+        background-color: #EAF0ED;
+        border-color: #EAF0ED;
+    }
+
+  //end product
+  .email{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    
+    .fa-envelope{
+      position: absolute;
+      left: 15px;
+      top: 5px;
+      transform: translateY(38%);
+    }
+    .btn-secondary{
+      background-color: #FFE180;
+      border:0;
+    }
+    
+  }
+  //end email
+  footer{
+    background-color: #EAF0ED;
+    
+    .footer-logo{
+      background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/logotype.svg);
+      position: absolute;
+      top:20px;
+      width: 172px;
+      height: 27px;
+    }
+    ul{
+      margin-top: 200px;    
+    }
+    ul li{
+      font-size: 16px;
+      color: #3F5D45;
+      line-height: 20px;
+    }
+    .social{
+      margin-top: 25px;
+      
+      a{
+        color: #3F5D45;
+      }
+    }
+    .copyright{
+      font-family: times;
+      color: #3F5D45;
+    }
+    .footer-slogan{
+      background-image: url(https://potatokaka.github.io/theF2E_v2-1_dessert/images/footer-slogan.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      width: 66px;
+      height: 217px;
+    }
+    
+  }
+  
+  
+  // end footer
